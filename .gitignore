@@ -1,0 +1,18 @@
+﻿# OS/editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Static site build outputs
+/dist/
+/build/
+/.next/
+/.astro/
+
+# Dependencies
+/node_modules/
+
+# Environment files
+.env
+.env.*
