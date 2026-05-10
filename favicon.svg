@@ -1,7 +1,18 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="SpeedGuard icon">
-  <rect width="64" height="64" rx="14" fill="#10251f"/>
-  <path d="M16 35a16 16 0 0 1 32 0" fill="none" stroke="#eaf6ef" stroke-width="5" stroke-linecap="round"/>
-  <path d="M32 35l11-14" fill="none" stroke="#35c46a" stroke-width="5" stroke-linecap="round"/>
-  <circle cx="32" cy="35" r="4" fill="#35c46a"/>
-  <path d="M14 44h36" fill="none" stroke="#eaf6ef" stroke-width="4" stroke-linecap="round"/>
+  <defs>
+    <linearGradient id="bg" x1="10" y1="4" x2="54" y2="60" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#202638"/>
+      <stop offset="1" stop-color="#080b14"/>
+    </linearGradient>
+    <linearGradient id="green" x1="18" y1="10" x2="49" y2="56" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#49ff93"/>
+      <stop offset="1" stop-color="#049947"/>
+    </linearGradient>
+  </defs>
+  <rect x="3" y="3" width="58" height="58" rx="14" fill="url(#bg)" stroke="#2c344a" stroke-width="2"/>
+  <path d="M32 10c7 6 14.5 9.4 22 10.7v12.1c0 10.6-7 18.2-22 22.5-15-4.3-22-11.9-22-22.5V20.7C17.5 19.4 25 16 32 10Z" fill="none" stroke="url(#green)" stroke-width="5" stroke-linejoin="round"/>
+  <path d="M18 34a14 14 0 0 1 28 0" fill="none" stroke="#0fcf65" stroke-width="4" stroke-linecap="round"/>
+  <path d="M32 34l11-9" fill="none" stroke="#49ff93" stroke-width="4" stroke-linecap="round"/>
+  <circle cx="32" cy="34" r="5" fill="#090b12" stroke="#35d984" stroke-width="4"/>
+  <path d="M25 51l5-11m9 11-5-11m-2 12 1-10" fill="none" stroke="#f3f6ff" stroke-width="3" stroke-linecap="round"/>
 </svg>

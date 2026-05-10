@@ -23,9 +23,11 @@
       <a class="brand" href="index.html" aria-label="SpeedGuard home">
         <span class="brand-mark" aria-hidden="true">
           <svg viewBox="0 0 24 24" width="22" height="22" focusable="false">
-            <path d="M4 14a8 8 0 0 1 16 0" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-            <path d="M12 14l5-7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-            <circle cx="12" cy="14" r="1.7" fill="currentColor"/>
+            <path d="M12 3.2c2.6 2.2 5.3 3.4 8 3.9v5.2c0 4.1-2.5 7-8 8.5-5.5-1.5-8-4.4-8-8.5V7.1c2.7-.5 5.4-1.7 8-3.9Z" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linejoin="round"/>
+            <path d="M7.3 12.8a4.7 4.7 0 0 1 9.4 0" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/>
+            <path d="M12 12.8l3.8-3.2" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/>
+            <circle cx="12" cy="12.8" r="1.5" fill="#090b12" stroke="currentColor" stroke-width="1.5"/>
+            <path d="M10.1 18.1l1.2-3.2m2.6 3.2-1.2-3.2" fill="none" stroke="#f3f6ff" stroke-width="1.2" stroke-linecap="round"/>
           </svg>
         </span>
         <span>SpeedGuard</span>
@@ -63,24 +65,42 @@
         <div class="hero-visual" aria-label="Illustrative app screen showing speed and speed-limit awareness">
           <div class="phone-shell">
             <div class="phone-screen">
-              <div class="phone-top">
-                <span>SpeedGuard</span>
-                <span class="signal" aria-hidden="true"></span>
+              <div class="app-status-row">
+                <span class="app-chip">
+                  <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true">
+                    <path d="m4 12 15-7-7 15-2-6-6-2Z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+                  </svg>
+                  Tracking
+                </span>
+                <span class="app-chip">
+                  <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true">
+                    <path d="M9 4v4m6-4v4M7 8h10l-2 5 4 4-2 2-4-4-5 2V8Z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+                  </svg>
+                  GPS good
+                </span>
+                <span class="gear-button" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" width="22" height="22">
+                    <path d="M12 8.5a3.5 3.5 0 1 1 0 7 3.5 3.5 0 0 1 0-7Z" fill="none" stroke="currentColor" stroke-width="2"/>
+                    <path d="M19 12a7 7 0 0 0-.1-1.2l2-1.5-2-3.4-2.4 1a7.4 7.4 0 0 0-2-1.2L14.2 3h-4.4l-.4 2.7a7.4 7.4 0 0 0-2 1.2l-2.4-1-2 3.4 2 1.5A7 7 0 0 0 5 12c0 .4 0 .8.1 1.2l-2 1.5 2 3.4 2.4-1a7.4 7.4 0 0 0 2 1.2l.4 2.7h4.4l.4-2.7a7.4 7.4 0 0 0 2-1.2l2.4 1 2-3.4-2-1.5c.1-.4.1-.8.1-1.2Z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+                  </svg>
+                </span>
               </div>
-              <div class="speed-face">
+
+              <div class="phone-speed-stack">
+                <span class="speed-number">3</span>
+                <span class="speed-unit">km/h</span>
+              </div>
+
+              <div class="phone-limit-sign" aria-label="Detected speed limit 40 kilometers per hour">
                 <div>
-                  <span class="speed-number">62</span>
-                  <span class="speed-unit">km/h</span>
+                  <span class="limit-value">40</span>
+                  <span class="panel-label">km/h</span>
                 </div>
               </div>
-              <div class="limit-strip">
-                <div class="limit-panel">
-                  <span class="panel-label">Detected limit</span>
-                  <span class="limit-value">60</span>
-                </div>
-                <div class="status-panel">Alert</div>
-              </div>
-              <p class="road-line">Road and limit information can be delayed, unavailable, or incorrect. Always follow posted signs.</p>
+
+              <p class="phone-road phone-road-empty" aria-hidden="true"></p>
+              <p class="phone-mode">City</p>
+              <p class="phone-stop">Stop Monitoring</p>
             </div>
           </div>
           <p class="visual-note">Illustrative interface only. The current Android app UI and available features may differ by build, device, plan, and region.</p>
