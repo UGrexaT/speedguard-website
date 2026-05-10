@@ -9,6 +9,7 @@ Thumbs.db
 /build/
 /.next/
 /.astro/
+.preview-server*.log
 
 # Dependencies
 /node_modules/
