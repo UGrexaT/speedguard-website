@@ -11,7 +11,7 @@
   <meta property="og:description" content="An Android driving and speed-limit awareness app.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://speedguard.net/">
-  <meta property="og:image" content="https://speedguard.net/favicon.svg">
+  <meta property="og:image" content="https://speedguard.net/app-icon.png">
   <meta name="twitter:card" content="summary">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="styles.css">
@@ -45,24 +45,35 @@
   <main id="main">
     <section class="hero">
       <div class="wrap hero-grid">
-        <div>
-          <p class="eyebrow">Android driving awareness</p>
+        <div class="hero-copy">
+          <div class="product-kicker">
+            <img src="app-icon.png" alt="" width="52" height="52">
+            <div>
+              <p class="eyebrow">Android driving awareness</p>
+              <p class="kicker-note">Live GPS speed, speed-limit context, and driver alerts.</p>
+            </div>
+          </div>
           <h1>SpeedGuard</h1>
           <p class="lead">
-            SpeedGuard is an Android app that helps drivers stay aware of their estimated speed and available speed-limit information while driving.
+            Know your speed. Stay aware of available posted-limit information. SpeedGuard keeps the driving view simple, fast, and built for the road in front of you.
           </p>
           <div class="hero-actions" aria-label="Primary links">
-            <a class="button" href="privacy.html">Review privacy policy</a>
-            <a class="button secondary" href="support.html">Contact support</a>
+            <a class="button" href="#what-it-does">See how it works</a>
+            <a class="button secondary" href="privacy.html">Review privacy policy</a>
           </div>
           <div class="trust-row" aria-label="SpeedGuard highlights">
-            <span class="pill">Android app</span>
-            <span class="pill">Speed-limit awareness</span>
+            <span class="pill">Android focused</span>
+            <span class="pill">Screen-off monitoring</span>
+            <span class="pill">Free and Pro tiers</span>
             <span class="pill">Informational only</span>
           </div>
         </div>
 
         <div class="hero-visual" aria-label="Illustrative app screen showing speed and speed-limit awareness">
+          <div class="preview-label" aria-hidden="true">
+            <span></span>
+            Dashboard preview
+          </div>
           <div class="phone-shell">
             <div class="phone-screen">
               <div class="app-status-row">
@@ -87,7 +98,7 @@
               </div>
 
               <div class="phone-speed-stack">
-                <span class="speed-number">3</span>
+                <span class="speed-number">48</span>
                 <span class="speed-unit">km/h</span>
               </div>
 
@@ -98,12 +109,12 @@
                 </div>
               </div>
 
-              <p class="phone-road phone-road-empty" aria-hidden="true"></p>
+              <p class="phone-road">Main Street</p>
               <p class="phone-mode">City</p>
               <p class="phone-stop">Stop Monitoring</p>
             </div>
           </div>
-          <p class="visual-note">Illustrative interface only. The current Android app UI and available features may differ by build, device, plan, and region.</p>
+          <p class="visual-note">Illustrative interface. Features may vary by build, device, plan, and region.</p>
         </div>
       </div>
     </section>
@@ -112,7 +123,7 @@
       <div class="wrap intro-row">
         <div>
           <p class="eyebrow">What it does</p>
-          <h2 id="what-it-does">A conservative driving aid.</h2>
+          <h2 id="what-it-does">A focused driving companion.</h2>
         </div>
         <div>
           <p class="section-text">
@@ -121,27 +132,110 @@
           <p class="section-text">
             SpeedGuard is not a substitute for posted signs, road conditions, vehicle instruments, driver judgment, or traffic laws. It is informational only.
           </p>
+          <div class="signal-list" aria-label="SpeedGuard workflow">
+            <div>
+              <span class="signal-dot safe"></span>
+              <strong>Measure</strong>
+              <p>Show a large live speed readout using GPS readings.</p>
+            </div>
+            <div>
+              <span class="signal-dot accent"></span>
+              <strong>Check</strong>
+              <p>Query available road data for posted-limit context.</p>
+            </div>
+            <div>
+              <span class="signal-dot caution"></span>
+              <strong>Alert</strong>
+              <p>Notify based on the tolerance the driver configured.</p>
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
     <section class="section" aria-labelledby="features">
       <div class="wrap">
-        <p class="eyebrow">App facts</p>
-        <h2 id="features">Built around awareness, not automation.</h2>
+        <div class="section-heading-row">
+          <div>
+            <p class="eyebrow">App facts</p>
+            <h2 id="features">Built around awareness, not automation.</h2>
+          </div>
+          <p class="section-side-note">The app keeps the main driving surface uncluttered: status at the top, speed in the center, controls at the bottom.</p>
+        </div>
         <div class="feature-grid">
-          <article class="feature">
-            <h3>Speed and alerts</h3>
+          <article class="feature feature-safe">
+            <span class="feature-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="22" height="22">
+                <path d="M5 15a7 7 0 0 1 14 0" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                <path d="M12 15l4-5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                <circle cx="12" cy="15" r="1.6" fill="currentColor"/>
+              </svg>
+            </span>
+            <h3>Live speed and alerts</h3>
             <p>The Android app estimates speed from location readings and can alert when the estimated speed exceeds a configured threshold.</p>
           </article>
-          <article class="feature">
+          <article class="feature feature-accent">
+            <span class="feature-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="22" height="22">
+                <path d="M9 18 5 20V6l4-2 6 2 4-2v14l-4 2-6-2Z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+                <path d="M9 4v14m6-12v14" fill="none" stroke="currentColor" stroke-width="2"/>
+              </svg>
+            </span>
             <h3>Speed-limit lookup</h3>
             <p>The app sends location-derived road queries to SpeedGuard services for speed-limit lookup. Premium users may receive additional map-provider fallback checks.</p>
           </article>
-          <article class="feature">
+          <article class="feature feature-premium">
+            <span class="feature-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="22" height="22">
+                <path d="M5 18h14l-1-9-4 3-2-5-2 5-4-3-1 9Z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+                <path d="M5 21h14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+            </span>
             <h3>Free and premium access</h3>
             <p>The Android app includes a free tier with ads and RevenueCat-backed monthly or yearly SpeedGuard Pro subscription handling for premium access.</p>
           </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section paper" aria-labelledby="android-design">
+      <div class="wrap app-layout">
+        <div>
+          <p class="eyebrow">Android design</p>
+          <h2 id="android-design">Dark, glanceable, and built for motion.</h2>
+          <p class="section-text">
+            The product UI uses a dark cockpit palette, large tabular speed numbers, status pills for GPS and tracking state, and simple bottom actions for monitoring and upgrades.
+          </p>
+        </div>
+        <div class="app-design-board" aria-label="SpeedGuard app design tokens">
+          <div class="token-row">
+            <span class="swatch swatch-safe"></span>
+            <div>
+              <strong>Safe green</strong>
+              <p>Normal speed, primary actions, active state.</p>
+            </div>
+          </div>
+          <div class="token-row">
+            <span class="swatch swatch-caution"></span>
+            <div>
+              <strong>Caution amber</strong>
+              <p>Approaching limit and highway threshold emphasis.</p>
+            </div>
+          </div>
+          <div class="token-row">
+            <span class="swatch swatch-danger"></span>
+            <div>
+              <strong>Alert red</strong>
+              <p>Over-limit and stop-monitoring surfaces.</p>
+            </div>
+          </div>
+          <div class="token-row">
+            <span class="swatch swatch-accent"></span>
+            <div>
+              <strong>Map cyan</strong>
+              <p>Lookup, road, and premium fallback cues.</p>
+            </div>
+          </div>
         </div>
       </div>
     </section>
