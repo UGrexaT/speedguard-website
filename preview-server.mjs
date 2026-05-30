@@ -48,5 +48,5 @@ createServer(async (request, response) => {
     }
   }
 }).listen(port, () => {
-  console.log(`SpeedGuard preview: http://localhost:${port}/`);
+  console.log(`Vehicle Speeding Guard preview: http://localhost:${port}/`);
 });
