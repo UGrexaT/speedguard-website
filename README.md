@@ -6,6 +6,7 @@ This is a dependency-free static site for `speedguard.net`. It includes:
 
 - Home page
 - Privacy Policy draft
+- Separate iOS Privacy Policy
 - Terms of Use draft
 - Support / Contact page
 - GitHub Pages support files (`CNAME`, `404.html`, `robots.txt`, `sitemap.xml`)

@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>iOS Privacy Policy | Vehicle Speeding Guard</title>
+  <meta name="description" content="Vehicle Speeding Guard privacy policy for iOS, including location, App Store disclosures, advertising, analytics, diagnostics, and subscription data practices.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://speedguard.net/privacy-ios.html">
+  <meta property="og:title" content="Vehicle Speeding Guard iOS Privacy Policy">
+  <meta property="og:description" content="How Vehicle Speeding Guard handles information in its iOS app.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://speedguard.net/privacy-ios.html">
+  <meta property="og:image" content="https://speedguard.net/app-icon.png">
+  <meta name="twitter:card" content="summary">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .ios-policy-header {
+      max-width: 880px;
+    }
+
+    .platform-label {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.55rem;
+      margin-bottom: 1rem;
+      padding: 0.42rem 0.7rem;
+      border: 1px solid rgba(104, 216, 255, 0.3);
+      border-radius: 999px;
+      color: var(--accent);
+      background: var(--accent-soft);
+      font-size: 0.78rem;
+      font-weight: 900;
+      letter-spacing: 0.08em;
+      line-height: 1;
+      text-transform: uppercase;
+    }
+
+    .platform-label::before {
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      content: "";
+      background: currentColor;
+      box-shadow: 0 0 12px rgba(104, 216, 255, 0.7);
+    }
+
+    .ios-policy-intro {
+      max-width: 78ch;
+      margin-top: 1.25rem;
+    }
+
+    .ios-policy-intro p {
+      color: var(--muted);
+      font-size: 1.04rem;
+    }
+
+    .ios-policy-intro p + p {
+      margin-top: 0.75rem;
+    }
+
+    .ios-summary {
+      position: relative;
+      overflow: hidden;
+      margin-top: 1.5rem;
+      padding: clamp(1.2rem, 3vw, 1.65rem);
+      border: 1px solid rgba(54, 211, 153, 0.24);
+      border-radius: var(--radius);
+      background:
+        linear-gradient(115deg, rgba(54, 211, 153, 0.1), rgba(104, 216, 255, 0.035) 58%, transparent),
+        var(--paper);
+    }
+
+    .ios-summary::before {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      width: 3px;
+      content: "";
+      background: linear-gradient(180deg, var(--green), var(--accent));
+    }
+
+    .ios-summary h2 {
+      margin: 0;
+      font-size: 1.45rem;
+    }
+
+    .ios-summary p,
+    .ios-summary ul {
+      margin-top: 0.8rem;
+      color: var(--muted);
+    }
+
+    .ios-summary ul {
+      padding-left: 1.2rem;
+    }
+
+    .ios-summary li + li {
+      margin-top: 0.45rem;
+    }
+
+    .policy-note {
+      margin-top: 1rem;
+      padding: 1rem 1.1rem;
+      border: 1px solid rgba(54, 211, 153, 0.3);
+      border-left: 3px solid var(--green);
+      border-radius: var(--radius);
+      background: rgba(54, 211, 153, 0.06);
+    }
+
+    .policy-note p {
+      margin-top: 0;
+      color: var(--ink);
+    }
+
+    .legal-content {
+      min-width: 0;
+    }
+
+    .data-table-wrap {
+      width: 100%;
+      max-width: 100%;
+      margin-top: 1rem;
+      overflow-x: auto;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: var(--paper);
+      -webkit-overflow-scrolling: touch;
+    }
+
+    .data-table {
+      width: 100%;
+      min-width: 760px;
+      border-collapse: collapse;
+      color: var(--muted);
+      font-size: 0.94rem;
+    }
+
+    .data-table caption {
+      padding: 1rem;
+      color: var(--ink);
+      font-weight: 900;
+      text-align: left;
+    }
+
+    .data-table th,
+    .data-table td {
+      padding: 0.85rem 1rem;
+      border-top: 1px solid var(--line);
+      text-align: left;
+      vertical-align: top;
+    }
+
+    .data-table th {
+      color: var(--ink);
+      font-size: 0.76rem;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+    }
+
+    .data-table tbody th {
+      font-size: 0.9rem;
+      letter-spacing: 0;
+      text-transform: none;
+    }
+
+    .status-no {
+      color: var(--green-strong);
+      font-weight: 900;
+      white-space: nowrap;
+    }
+
+    .status-yes {
+      color: var(--ink);
+      font-weight: 900;
+      white-space: nowrap;
+    }
+
+    .policy-links a {
+      overflow-wrap: anywhere;
+    }
+
+    @media (max-width: 520px) {
+      .content-page {
+        padding-top: 40px;
+      }
+
+      .data-table-wrap {
+        margin-right: -0.25rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="nav-wrap">
+      <a class="brand" href="index.html" aria-label="Vehicle Speeding Guard home">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 24 24" width="22" height="22" focusable="false">
+            <path d="M12 3.2c2.6 2.2 5.3 3.4 8 3.9v5.2c0 4.1-2.5 7-8 8.5-5.5-1.5-8-4.4-8-8.5V7.1c2.7-.5 5.4-1.7 8-3.9Z" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linejoin="round"/>
+            <path d="M7.3 12.8a4.7 4.7 0 0 1 9.4 0" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/>
+            <path d="M12 12.8l3.8-3.2" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/>
+            <circle cx="12" cy="12.8" r="1.5" fill="#090b12" stroke="currentColor" stroke-width="1.5"/>
+            <path d="M10.1 18.1l1.2-3.2m2.6 3.2-1.2-3.2" fill="none" stroke="#f3f6ff" stroke-width="1.2" stroke-linecap="round"/>
+          </svg>
+        </span>
+        <span>Vehicle Speeding Guard</span>
+      </a>
+      <button class="nav-toggle" type="button" data-nav-toggle aria-controls="site-nav" aria-expanded="false">Menu</button>
+      <nav class="site-nav" id="site-nav" data-site-nav aria-label="Primary navigation">
+        <a href="index.html">Home</a>
+        <a href="privacy.html">Privacy</a>
+        <a href="privacy-ios.html" aria-current="page">iOS Privacy</a>
+        <a href="terms.html">Terms</a>
+        <a href="support.html">Support</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="content-page">
+    <div class="wrap">
+      <header class="page-header ios-policy-header">
+        <p class="platform-label">iOS policy</p>
+        <h1>Vehicle Speeding Guard Privacy Policy</h1>
+        <p class="page-meta">Effective date: July 26, 2026</p>
+
+        <div class="ios-policy-intro">
+          <p>Vehicle Speeding Guard (&ldquo;SpeedGuard,&rdquo; &ldquo;we,&rdquo; &ldquo;us,&rdquo; or &ldquo;our&rdquo;) is operated by <strong>17920318 CANADA INC.</strong> Revaz Ugrekhelidze is the developer and privacy contact.</p>
+          <p>Privacy questions, access requests, correction requests, and deletion requests may be sent to <a href="mailto:speedguardapp@gmail.com?subject=Privacy%20Request">speedguardapp@gmail.com</a>.</p>
+        </div>
+
+        <section class="ios-summary" aria-labelledby="summary-heading">
+          <h2 id="summary-heading">Summary</h2>
+          <p>SpeedGuard is a driving-awareness app that uses device location to estimate speed, identify the current road, look up available speed-limit information, and provide alerts. It does not replace posted signs, traffic laws, road conditions, vehicle instruments, or driver judgment.</p>
+          <p><strong>We do not sell personal information or sensitive personal information.</strong> SpeedGuard does not use location for advertising targeting. The iOS app does not track users across apps or websites, does not request App Tracking Transparency (ATT) permission, and requests non-personalized ads only.</p>
+          <p>Depending on the features you use, your subscription tier, your permissions, your region, and which services are enabled in the release, SpeedGuard may process:</p>
+          <ul>
+            <li>Precise or approximate device location and driving-related readings while a user-started monitoring session is active.</li>
+            <li>Location-derived road-lookup requests sent through protected SpeedGuard services to Valhalla-backed services and, for Premium, HERE.</li>
+            <li>Random or app-bounded installation and device identifiers used for security, rate limiting, analytics, diagnostics, subscriptions, and eligible free-tier advertising.</li>
+            <li>Product-interaction, advertising, crash, performance, and other diagnostic data.</li>
+            <li>App Store, StoreKit, and RevenueCat purchase, subscription, and entitlement information.</li>
+            <li>Settings, active-session recovery state, bounded analytics retry markers, and derived completed-drive summaries stored locally on the device.</li>
+          </ul>
+        </section>
+      </header>
+
+      <div class="legal-layout">
+        <aside class="toc" aria-label="iOS privacy policy sections">
+          <p>Contents</p>
+          <a href="#information">Information we process</a>
+          <a href="#app-store-disclosure">iOS App Store disclosure</a>
+          <a href="#local-data">Information stored on the device</a>
+          <a href="#uses">How information is used</a>
+          <a href="#providers">Service providers</a>
+          <a href="#choices">Permissions and privacy choices</a>
+          <a href="#retention">Retention</a>
+          <a href="#security">Security and international processing</a>
+          <a href="#children">Children</a>
+          <a href="#third-party-policies">Third-party policies</a>
+          <a href="#changes">Changes to this policy</a>
+        </aside>
+
+        <article class="legal-content">
+          <section id="information">
+            <h2>Information We Process</h2>
+
+            <h3>Precise and Coarse Location</h3>
+            <p>After you grant Location permission and start monitoring, SpeedGuard may process latitude, longitude, GPS accuracy, heading, speed or speed-derived readings, timestamps, and a short recent location trace. This information is used to display speed, identify the current road, look up speed-limit information, evaluate alert thresholds, provide alerts or announcements, and safely recover or stop an active session.</p>
+            <p>If iOS provides approximate rather than precise location, SpeedGuard may process that coarse location for the same app-functionality purposes, although accuracy and speed-limit results may be reduced or unavailable. Google services used for eligible free-tier advertising may also derive an approximate location from an IP address for advertising delivery and analytics.</p>
+            <p>Free iOS monitoring stops when SpeedGuard leaves the foreground or the iPhone locks. Premium monitoring may continue while the app is minimized or the screen is off only after you start monitoring and grant background-capable Location access. Monitoring can be stopped in the app.</p>
+            <p><strong>SpeedGuard does not use precise or coarse location for advertising targeting or cross-app tracking.</strong></p>
+
+            <h3>Speed-Limit Requests</h3>
+            <p>SpeedGuard sends location-derived road-lookup data through protected SpeedGuard gateway services. Requests may include recent chronological latitude and longitude points, GPS speed, heading, GPS accuracy, timestamps or request timing, a random installation token used for diagnostics and rate limiting, Firebase App Check proof, and basic request metadata. Premium HERE requests may also include the anonymous RevenueCat app-user identifier needed to verify the SpeedGuard Pro entitlement.</p>
+            <p>Valhalla-backed map matching detects the current road. Trusted Valhalla data may provide free-user speed limits. For Premium users, HERE is the authority for displayed speed limits, alerts, and announcements; Valhalla remains a road detector. A Premium HERE request may contain two to six recent chronological points after sufficient movement. A newly detected Premium road remains unavailable until HERE confirms it.</p>
+            <p>SpeedGuard does not intentionally retain a complete route history on its servers. Providers may process request data and retain limited operational, security, diagnostic, rate-limiting, or legally required records under their applicable policies and agreements.</p>
+
+            <h3>Identifiers</h3>
+            <p>SpeedGuard and its integrated services may create or receive random, pseudonymous, app-bounded, installation, or device identifiers. These may include:</p>
+            <ul>
+              <li>A random SpeedGuard installation token used for gateway security, diagnostics, abuse prevention, and rate limiting.</li>
+              <li>Firebase installation and analytics identifiers used for app security, configured analytics, crashes, and diagnostics.</li>
+              <li>An anonymous RevenueCat app-user identifier used for purchases, subscriptions, restores, and entitlement verification.</li>
+              <li>Advertising-related or app-bounded device identifiers used by Google for eligible free-tier, non-personalized advertising and analytics where permitted.</li>
+            </ul>
+            <p>SpeedGuard does not require an in-app account and does not intentionally connect these identifiers to a user's name, email address, or phone number. Apple's App Store disclosure may nevertheless classify certain information as &ldquo;linked to the user&rdquo; when it is associated with a device or persistent pseudonymous identifier.</p>
+
+            <h3>Product Interaction and Usage Analytics</h3>
+            <p>After the User Agreement is accepted, configured Firebase Analytics may process allowlisted information such as app launches, screen views, monitoring start and stop events, feature use, purchase initiation and restore events, subscription tier, app version, and bounded event parameters. This information is used for app functionality, analytics, and, where applicable, evaluating eligible free-tier advertising.</p>
+            <p>Product analytics does not intentionally include precise location, road names, route traces, free-form text, App Check tokens, device tokens, or RevenueCat customer identifiers. Failed allowlisted events may remain temporarily in a bounded local queue until a later delivery attempt.</p>
+
+            <h3>Advertising Data</h3>
+            <p>Eligible free users may receive a banner ad only when advertising is enabled, a production iOS ad unit is configured, and Google's User Messaging Platform (UMP) authorizes an ad request. Google AdMob may process IP address, basic device and network information, app-bounded or advertising identifiers where permitted, ad request and delivery information, and ad views, clicks, or other interactions. This information may be used for third-party advertising and analytics.</p>
+            <p>The iOS app requests non-personalized ads only and denies advertising storage, advertising user-data, measurement, and personalization consent signals. SpeedGuard does not request ATT permission, does not declare an ATT tracking usage string, does not use location for ad targeting, and does not integrate TikTok on iOS. Premium users are not shown ads.</p>
+
+            <h3>Purchases and Subscriptions</h3>
+            <p>Apple's App Store, StoreKit, and RevenueCat process purchases and subscriptions. SpeedGuard may receive product identifiers, localized product information, purchase and entitlement status, trial or introductory-period type, expiration and renewal state, store, restore results, management links, paywall events, and Customer Center events. This information is used for app functionality and purchase analytics.</p>
+            <p>SpeedGuard does not receive your full payment-card number. The app uses RevenueCat's randomly generated anonymous app-user identifier and does not tie purchase history to a SpeedGuard account, name, or email address. Apple, RevenueCat, or payment providers may independently associate purchase information with accounts they control under their own privacy practices.</p>
+
+            <h3>Crash, Performance, and Other Diagnostic Data</h3>
+            <p>Firebase Crashlytics, Google services, and related infrastructure may process crashes, non-fatal errors, diagnostic logs, app version, device model, operating-system version, request timing, IP address, app launch time, hang rate, energy use, and similar reliability or technical information.</p>
+            <p>Crash data and other diagnostic data are used for app functionality and analytics and are not intentionally linked by SpeedGuard to a user's identity. Performance data may be associated with an app installation or device and may also support third-party advertising performance. SpeedGuard does not set a personally identifying Crashlytics user ID.</p>
+          </section>
+
+          <section id="app-store-disclosure">
+            <h2>Current iOS App Store Disclosure</h2>
+            <p>The current iOS release is intended to use the following App Store privacy disclosure. &ldquo;Linked&rdquo; does not mean that SpeedGuard knows the user's name; Apple also treats association with a device or persistent identifier as linkage.</p>
+            <div class="data-table-wrap" role="region" aria-label="Scrollable iOS App Store privacy disclosure table" tabindex="0">
+              <table class="data-table">
+                <caption>Current iOS App Store privacy categories</caption>
+                <thead>
+                  <tr>
+                    <th scope="col">Data type</th>
+                    <th scope="col">Purposes</th>
+                    <th scope="col">Linked to user</th>
+                    <th scope="col">Used for tracking</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr><th scope="row">Precise Location</th><td>App Functionality</td><td class="status-yes">Yes</td><td class="status-no">No</td></tr>
+                  <tr><th scope="row">Coarse Location</th><td>App Functionality; Analytics; Third-Party Advertising</td><td class="status-yes">Yes</td><td class="status-no">No</td></tr>
+                  <tr><th scope="row">Device ID</th><td>App Functionality; Analytics; Third-Party Advertising</td><td class="status-yes">Yes</td><td class="status-no">No</td></tr>
+                  <tr><th scope="row">Purchases</th><td>App Functionality; Analytics</td><td class="status-no">No</td><td class="status-no">No</td></tr>
+                  <tr><th scope="row">Product Interaction</th><td>App Functionality; Analytics; Third-Party Advertising</td><td class="status-yes">Yes</td><td class="status-no">No</td></tr>
+                  <tr><th scope="row">Advertising Data</th><td>Analytics; Third-Party Advertising</td><td class="status-yes">Yes</td><td class="status-no">No</td></tr>
+                  <tr><th scope="row">Crash Data</th><td>App Functionality; Analytics</td><td class="status-no">No</td><td class="status-no">No</td></tr>
+                  <tr><th scope="row">Performance Data</th><td>App Functionality; Analytics; Third-Party Advertising</td><td class="status-yes">Yes</td><td class="status-no">No</td></tr>
+                  <tr><th scope="row">Other Diagnostic Data</th><td>App Functionality; Analytics</td><td class="status-no">No</td><td class="status-no">No</td></tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="policy-note">
+              <p><strong>No iOS data category is used for tracking as Apple defines that term.</strong></p>
+            </div>
+          </section>
+
+          <section id="local-data">
+            <h2>Completed-Drive Statistics Stored on the Device</h2>
+            <p>When a meaningful monitoring session ends, the app may create a local summary containing start and end time, duration, estimated distance, estimated average and maximum sustained speed, moving and stopped time, stop and driving-event counts, GPS coverage and accuracy aggregates, trusted posted-limit coverage and compliance aggregates, and a derived score when enough usable data exists.</p>
+            <p>Completed-drive summaries do not contain latitude, longitude, coordinate traces, routes, road names, or raw GPS sample history. They remain on the device, are not sent to SpeedGuard services or analytics, are available to every subscription tier, and support only the History, Drive Details, and Insights features. Because this information remains solely on the device, it is not treated as collected for the App Store privacy disclosure.</p>
+
+            <h2>Other Information Stored on the Device</h2>
+            <p>The app may store:</p>
+            <ul>
+              <li>Speed unit, alert preferences, Premium thresholds, language, and announcement preferences.</li>
+              <li>Onboarding, current User Agreement acceptance, and permission-introduction state.</li>
+              <li>Active monitoring-session state used for recovery and cleanup.</li>
+              <li>Aggregate completed-drive summaries and a local history index.</li>
+              <li>Temporary same-road speed-limit continuity state.</li>
+              <li>A random installation token, subscription tier, and anonymous RevenueCat app-user identifier.</li>
+              <li>Trial-promotion qualification, a product-analytics retry queue of no more than 100 events, and durable once-only analytics markers.</li>
+            </ul>
+            <p>Persistent weak repeat-route HERE caching is disabled. Debug Log retention and navigation are disabled in release builds. Local information is generally removed when the app is uninstalled, subject to normal iOS backup and restore behavior.</p>
+          </section>
+
+          <section id="uses">
+            <h2>How Information Is Used</h2>
+            <ul>
+              <li>Provide monitoring, speed display, speed-limit information, alerts, and announcements.</li>
+              <li>Match the device to a road and request available speed-limit data.</li>
+              <li>Recover or stop monitoring sessions safely.</li>
+              <li>Verify app integrity, protect gateway services, prevent abuse, and enforce rate limits.</li>
+              <li>Provide, restore, and manage subscription features and entitlements.</li>
+              <li>Deliver and evaluate eligible non-personalized banner advertising.</li>
+              <li>Diagnose crashes and failures, monitor performance, and understand allowlisted product use.</li>
+              <li>Provide support, comply with law, and meet App Store requirements.</li>
+            </ul>
+          </section>
+
+          <section id="providers">
+            <h2>Service Providers and Disclosure</h2>
+            <p>Information may be processed by:</p>
+            <ul>
+              <li><strong>SpeedGuard backend infrastructure</strong> for protected speed-limit lookup, security, diagnostics, entitlement verification, rate limiting, and abuse prevention.</li>
+              <li><strong>Valhalla-backed services</strong> for road detection, map matching, and supported speed-limit results.</li>
+              <li><strong>HERE</strong> for Premium speed-limit results.</li>
+              <li><strong>Firebase and Google</strong> for App Check, configured analytics, crash reporting, diagnostics, UMP, and eligible non-personalized AdMob banners.</li>
+              <li><strong>Apple App Store and StoreKit</strong> for products, purchases, subscriptions, restores, and billing administration.</li>
+              <li><strong>RevenueCat</strong> for products, purchase validation, subscription status, entitlements, paywalls, restores, and Customer Center features.</li>
+              <li><strong>Transistorsoft Background Geolocation</strong> for on-device location monitoring and session support.</li>
+            </ul>
+            <p>Providers process information under their applicable terms, privacy policies, contracts, and legal obligations. Information may also be disclosed when required by law, to protect rights or safety, investigate abuse, or complete a business transfer subject to applicable law.</p>
+            <p><strong>SpeedGuard does not sell personal information or sensitive personal information.</strong></p>
+          </section>
+
+          <section id="choices">
+            <h2>Permissions and Privacy Choices</h2>
+            <p>SpeedGuard requests Location permission contextually when monitoring is first started, not during onboarding. Premium background monitoring may require Always Location access.</p>
+            <p>You can:</p>
+            <ul>
+              <li>Stop monitoring at any time in the app.</li>
+              <li>Change or revoke Location access in iOS Settings.</li>
+              <li>Manage or cancel subscriptions through the App Store or available RevenueCat Customer Center features.</li>
+              <li>Use UMP privacy options when offered.</li>
+              <li>Delete one completed-drive summary or use Clear All History.</li>
+              <li>Uninstall the app to remove locally stored app information, subject to backup and restore behavior.</li>
+              <li>Request access, correction, or deletion of information controlled by SpeedGuard by emailing <a href="mailto:speedguardapp@gmail.com?subject=Privacy%20Request">speedguardapp@gmail.com</a> with the subject <strong>Privacy Request</strong>.</li>
+            </ul>
+            <p>Because SpeedGuard does not require an account, some information exists only on your device and cannot be accessed or deleted by us. To locate an applicable record, we may ask for your platform, app version, approximate dates of use, anonymous installation or RevenueCat identifier, or a store transaction reference. Do not send passwords, full payment-card details, private keys, API keys, or unrelated sensitive information.</p>
+            <p>We may take reasonable steps to verify a request. We will respond as required by applicable law and delete or de-identify eligible information unless retention is required for security, fraud prevention, transactions, legal compliance, or another lawful purpose. We may direct you to Apple, Google, RevenueCat, or another provider when that provider independently controls the requested record.</p>
+          </section>
+
+          <section id="retention">
+            <h2>Retention</h2>
+            <p>Completed-drive summaries remain on the device until you delete them, clear all history, or uninstall the app, subject to iOS backup and restore behavior. Other local information remains until removed by app behavior or uninstall.</p>
+            <p>SpeedGuard backend logs and diagnostics are retained only as reasonably needed for operation, security, debugging, rate limiting, abuse prevention, and legal compliance. Providers retain information under their own policies, contracts, and legal obligations. A deletion request to SpeedGuard does not automatically delete records independently controlled or legally retained by Apple, Google, RevenueCat, HERE, or another provider.</p>
+          </section>
+
+          <section id="security">
+            <h2>Security and International Processing</h2>
+            <p>SpeedGuard uses safeguards such as HTTPS where supported, iOS permissions, Firebase App Check, rate limiting, and restricted analytics event schemas. No method of transmission or storage is completely secure.</p>
+            <p>SpeedGuard and its providers may process information in Canada, the United States, and other countries where they operate. Those countries may have data-protection laws that differ from the laws where you live.</p>
+          </section>
+
+          <section id="children">
+            <h2>Children</h2>
+            <p>SpeedGuard is intended for licensed drivers and is not directed to children. We do not knowingly collect personal information from children. If you believe a child has provided personal information through SpeedGuard, contact us so we can review and delete it where appropriate.</p>
+          </section>
+
+          <section id="third-party-policies">
+            <h2>Third-Party Privacy Policies</h2>
+            <ul class="policy-links">
+              <li><a href="https://www.apple.com/legal/privacy/" rel="noopener">Apple Privacy Policy</a></li>
+              <li><a href="https://policies.google.com/privacy" rel="noopener">Google Privacy Policy</a></li>
+              <li><a href="https://firebase.google.com/support/privacy" rel="noopener">Firebase Privacy and Security</a></li>
+              <li><a href="https://www.revenuecat.com/privacy/" rel="noopener">RevenueCat Privacy Policy</a></li>
+              <li><a href="https://legal.here.com/en-gb/privacy" rel="noopener">HERE Privacy Policy</a></li>
+            </ul>
+          </section>
+
+          <section id="changes">
+            <h2>Changes to This Policy</h2>
+            <p>We may update this policy to reflect changes to the app, providers, or legal requirements. We will post the revised policy at the same public URL and update the effective date. Material changes may also receive notice in the app or the App Store.</p>
+          </section>
+        </article>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-wrap">
+      <div>
+        <p>Vehicle Speeding Guard is operated by 17920318 CANADA INC.</p>
+        <p>Developer and privacy contact: Revaz Ugrekhelidze &middot; <a href="mailto:speedguardapp@gmail.com">speedguardapp@gmail.com</a></p>
+      </div>
+      <nav class="footer-links" aria-label="Footer navigation">
+        <a href="privacy.html">Privacy</a>
+        <a href="privacy-ios.html" aria-current="page">iOS Privacy</a>
+        <a href="terms.html">Terms</a>
+        <a href="support.html">Support</a>
+      </nav>
+    </div>
+  </footer>
+  <script src="script.js" defer></script>
+</body>
+</html>
