@@ -653,12 +653,97 @@ main {
   aspect-ratio: 4 / 3;
 }
 
+.speed-motion {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  opacity: 0.7;
+  pointer-events: none;
+}
+
+.speed-trail {
+  --trail-opacity: 0.62;
+  position: absolute;
+  left: -8%;
+  height: 2px;
+  background: linear-gradient(
+    90deg,
+    transparent 0,
+    rgba(57, 242, 133, 0.08) 26%,
+    rgba(57, 242, 133, 0.64) 78%,
+    rgba(231, 255, 240, 0.9) 100%
+  );
+  border-radius: 999px;
+  box-shadow: 0 0 12px rgba(57, 242, 133, 0.62);
+  opacity: var(--trail-opacity);
+  transform: rotate(-1deg);
+  transform-origin: right center;
+}
+
+.speed-trail:nth-child(1) {
+  top: 55%;
+  width: 46%;
+}
+
+.speed-trail:nth-child(2) {
+  --trail-opacity: 0.42;
+  top: 61%;
+  left: -3%;
+  width: 37%;
+  height: 1px;
+}
+
+.speed-trail:nth-child(3) {
+  --trail-opacity: 0.68;
+  top: 68%;
+  left: -9%;
+  width: 54%;
+}
+
+.speed-trail:nth-child(4) {
+  --trail-opacity: 0.38;
+  top: 74%;
+  left: -4%;
+  width: 42%;
+  height: 1px;
+}
+
+.speed-trail:nth-child(5) {
+  --trail-opacity: 0.56;
+  top: 81%;
+  left: -9%;
+  width: 61%;
+}
+
+.road-rush {
+  position: absolute;
+  right: 1%;
+  bottom: 3%;
+  left: -6%;
+  height: 14%;
+  background:
+    repeating-linear-gradient(
+      100deg,
+      transparent 0 22px,
+      rgba(57, 242, 133, 0.08) 24px 52px,
+      rgba(216, 255, 231, 0.38) 54px 56px,
+      transparent 58px 116px
+    );
+  background-size: 170px 100%;
+  box-shadow: 0 -4px 18px rgba(57, 242, 133, 0.16);
+  filter: blur(4px);
+  mask-image: linear-gradient(90deg, transparent, #000 18% 78%, transparent);
+  opacity: 0.54;
+  transform: skewX(-16deg);
+}
+
 .cockpit-illustration {
   position: relative;
-  z-index: 1;
+  z-index: 3;
   display: block;
   width: 100%;
   filter: drop-shadow(0 30px 30px rgba(0, 0, 0, 0.4));
+  pointer-events: none;
 }
 
 .hero-car-render {
@@ -1828,6 +1913,34 @@ table {
     bottom: -3%;
     left: -2%;
     width: 104%;
+  }
+
+  .speed-trail:nth-child(2),
+  .speed-trail:nth-child(4) {
+    display: none;
+  }
+
+  .speed-trail:nth-child(1) {
+    left: -6%;
+    width: 39%;
+  }
+
+  .speed-trail:nth-child(3) {
+    left: -9%;
+    width: 45%;
+  }
+
+  .speed-trail:nth-child(5) {
+    left: -11%;
+    width: 49%;
+  }
+
+  .road-rush {
+    right: 3%;
+    bottom: 4%;
+    left: -2%;
+    height: 12%;
+    opacity: 0.38;
   }
 
   .visual-note {

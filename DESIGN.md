@@ -101,8 +101,10 @@ The hero title uses a two-level lockup: “Vehicle” is smaller and
 - The inline SVG supplies the speedometer, green-to-red gauge arc, needle, and
   explanatory text alternative.
 - `hero-car-cutout.png` supplies a low-contrast cinematic coupe with a true
-  alpha channel and normal compositing over the gauge. Responsive positioning
-  keeps the coupe grounded beneath the needle without a rectangular backdrop.
+  alpha channel. The stacking order is ambient glow, speed effects, coupe, then
+  the complete SVG gauge so the instrument remains the foreground focal point.
+- Five asymmetric emerald light trails and a blurred road strip communicate
+  forward speed without altering or obscuring the coupe.
 - The primary Google Play button uses a custom vector Play mark.
 - The secondary button scrolls to the workflow.
 - The visual remains visible and responsive on mobile.
@@ -143,6 +145,8 @@ Motion suggests an instrument powering on:
 - The SVG enters with a small horizontal offset.
 - The gauge needle performs one brief settling movement; it does not simulate
   live telemetry.
+- Static light trails and a blurred road texture suggest forward motion without
+  adding continuous animation.
 - Cards and status rows use a restrained stagger.
 - Hover transitions are approximately `180–200ms`.
 
