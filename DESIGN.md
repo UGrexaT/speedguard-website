@@ -102,7 +102,8 @@ The hero title uses a two-level lockup: “Vehicle” is smaller and
   explanatory text alternative.
 - `hero-car-cutout.png` supplies a low-contrast cinematic coupe with a true
   alpha channel. The stacking order is ambient glow, speed effects, coupe, then
-  the complete SVG gauge so the instrument remains the foreground focal point.
+  the complete SVG gauge. The gauge is vertically offset above the roofline so
+  the instrument remains prominent without covering the coupe.
 - Five asymmetric emerald light trails and a blurred road strip communicate
   forward speed without altering or obscuring the coupe.
 - The primary Google Play button uses a custom vector Play mark.

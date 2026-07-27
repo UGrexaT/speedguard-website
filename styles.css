@@ -743,6 +743,7 @@ main {
   display: block;
   width: 100%;
   filter: drop-shadow(0 30px 30px rgba(0, 0, 0, 0.4));
+  transform: translateY(-14%);
   pointer-events: none;
 }
 
