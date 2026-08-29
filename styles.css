@@ -43,7 +43,6 @@ html {
 
 body {
   position: relative;
-  min-width: 320px;
   margin: 0;
   color: var(--ink);
   background:
@@ -315,6 +314,20 @@ h3 {
   box-shadow: 0 0 26px rgba(57, 242, 133, 0.28);
 }
 
+.site-nav .nav-store-app {
+  color: var(--ink);
+  background: rgba(255, 255, 255, 0.07);
+  border-color: rgba(247, 255, 249, 0.3);
+  box-shadow: inset 0 0 14px rgba(255, 255, 255, 0.025);
+}
+
+.site-nav .nav-store-app:hover {
+  color: var(--ink);
+  background: rgba(255, 255, 255, 0.12);
+  border-color: rgba(57, 242, 133, 0.48);
+  box-shadow: 0 0 24px rgba(57, 242, 133, 0.12);
+}
+
 .nav-toggle {
   display: none;
   align-items: center;
@@ -576,6 +589,39 @@ main {
 .play-mark svg {
   width: 19px;
   height: 19px;
+}
+
+.apple-mark {
+  display: grid;
+  place-items: center;
+  width: 28px;
+  height: 28px;
+  color: var(--ink);
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 50%;
+}
+
+.apple-mark svg {
+  width: 17px;
+  height: 22px;
+}
+
+.app-store-button {
+  color: var(--ink);
+  background: #080b0a;
+  border-color: rgba(247, 255, 249, 0.34);
+  box-shadow:
+    0 0 22px rgba(0, 0, 0, 0.32),
+    inset 0 1px 0 rgba(255, 255, 255, 0.08);
+}
+
+.app-store-button:hover {
+  color: var(--ink);
+  background: #101613;
+  border-color: rgba(57, 242, 133, 0.58);
+  box-shadow:
+    0 0 28px rgba(57, 242, 133, 0.15),
+    inset 0 1px 0 rgba(255, 255, 255, 0.12);
 }
 
 .store-label {
@@ -1221,12 +1267,24 @@ main {
   color: var(--muted);
 }
 
+.download-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  justify-content: flex-end;
+}
+
 .store-button-large {
   min-width: 194px;
   min-height: 56px;
 }
 
 .store-button-large .play-mark {
+  width: 32px;
+  height: 32px;
+}
+
+.store-button-large .apple-mark {
   width: 32px;
   height: 32px;
 }
@@ -1751,8 +1809,8 @@ table {
     gap: 1.6rem;
   }
 
-  .download-content .button {
-    justify-self: start;
+  .download-actions {
+    justify-content: flex-start;
   }
 
   .toc {
@@ -2020,6 +2078,10 @@ table {
   }
 
   .download-content .button {
+    width: 100%;
+  }
+
+  .download-actions {
     width: 100%;
   }
 

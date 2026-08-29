@@ -92,7 +92,7 @@ The hero title uses a two-level lockup: “Vehicle” is smaller and
 - Sticky translucent near-black surface with a thin green light line.
 - Compact circular speedometer mark and two-line product wordmark.
 - Primary navigation preserves Home, Privacy, iOS Privacy, Terms, and Support.
-- Google Play is the only filled navigation action.
+- Google Play and the App Store are presented as paired navigation actions.
 - At `980px` and below, links move into the existing accessible menu.
 
 ### Hero
@@ -106,7 +106,7 @@ The hero title uses a two-level lockup: “Vehicle” is smaller and
   the instrument remains prominent without covering the coupe.
 - Five asymmetric emerald light trails and a blurred road strip communicate
   forward speed without altering or obscuring the coupe.
-- The primary Google Play button uses a custom vector Play mark.
+- The store actions use custom vector Google Play and Apple marks.
 - The secondary button scrolls to the workflow.
 - The visual remains visible and responsive on mobile.
 
@@ -128,8 +128,8 @@ The hero title uses a two-level lockup: “Vehicle” is smaller and
 ### Safety and download
 
 - The red safety strip stays in normal reading flow and is never collapsible.
-- The closing download band repeats the verified Google Play action.
-- App Store and social destinations are omitted until verified links exist.
+- The closing download band repeats the verified Google Play and App Store actions.
+- Social destinations remain omitted until verified links exist.
 
 ### Legal and support
 
@@ -187,6 +187,6 @@ Before release, verify:
 
 - Desktop and mobile layouts at 1440, 1024, 768, 390, and 320 pixels.
 - Keyboard access, menu behavior, focus, skip links, and reduced motion.
-- All internal links and the verified Google Play destination.
+- All internal links and the verified Google Play and App Store destinations.
 - No browser-console errors or horizontal overflow.
 - Readability of legal and support pages after shared-style changes.

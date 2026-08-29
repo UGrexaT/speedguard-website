@@ -41,6 +41,6 @@ The `CNAME` file is already set to `speedguard.net`.
 
 ## Content Review Notes
 
-The Privacy Policy and Terms of Use are production-oriented drafts based on inspection of the current Android repository. They should be reviewed by the operator or legal counsel before being treated as final legal advice or final store-disclosure copy.
+The Privacy Policy and Terms of Use are production-oriented drafts based on inspection of the current Android repository and iOS release materials. They should be reviewed by the operator or legal counsel before being treated as final legal advice or final store-disclosure copy.
 
-Items that need operator review include live backend retention, Firebase console settings, AdMob settings, Play Console disclosures, RevenueCat offerings, HERE/Valhalla processing arrangements, regional legal requirements, and whether production app builds enable optional collection flags.
+Items that need operator review include live backend retention, Firebase console settings, AdMob settings, App Store and Play Console disclosures, RevenueCat offerings, HERE/Valhalla processing arrangements, regional legal requirements, and whether production app builds enable optional collection flags.
