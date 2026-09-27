@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex">
+<title>SpeedGuard: Speed Limit Alerts</title>
+<style>
+  body{margin:0;min-height:100vh;display:flex;align-items:center;justify-content:center;background:#020D17;color:#F5FAFF;font:16px/1.5 system-ui,-apple-system,Segoe UI,Roboto,sans-serif;text-align:center}
+  main{padding:24px;max-width:420px}
+  img{width:96px;height:96px;border-radius:22px}
+  h1{font-size:26px;margin:16px 0 4px}
+  p{color:#B7C9D6;margin:0 0 24px}
+  a{display:block;margin:12px 0;padding:14px 20px;border-radius:999px;border:2px solid #32F5A0;color:#F5FAFF;text-decoration:none;font-weight:700}
+</style>
+</head>
+<body>
+<main>
+  <img src="/app-icon.png" alt="SpeedGuard icon">
+  <h1>SpeedGuard</h1>
+  <p>Your speed, the posted limit, and a voice alert when you go over.</p>
+  <a id="ios" href="#">Download on the App Store</a>
+  <a id="android" href="#">Get it on Google Play</a>
+</main>
+<script>
+  // Sends visitors from facebook to the right store, tagged so installs show up per platform.
+  var SRC = "facebook";
+  var APPLE_PT = ""; // App Store Connect provider token (App Analytics > Campaigns). Empty = untagged link.
+  var play = "https://play.google.com/store/apps/details?id=net.speedguard&referrer=" +
+    encodeURIComponent("utm_source=" + SRC + "&utm_medium=social&utm_campaign=autopilot");
+  var ios = "https://apps.apple.com/app/apple-store/id6794127435" +
+    (APPLE_PT ? "?pt=" + APPLE_PT + "&ct=" + SRC + "&mt=8" : "");
+  document.getElementById("ios").href = ios;
+  document.getElementById("android").href = play;
+  var ua = navigator.userAgent || "";
+  if (/iPhone|iPad|iPod/i.test(ua)) location.replace(ios);
+  else if (/Android/i.test(ua)) location.replace(play);
+</script>
+</body>
+</html>
