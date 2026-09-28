@@ -1,6 +1,6 @@
-# Vehicle Speeding Guard Website
+# SpeedGuard Website
 
-Official public website for Vehicle Speeding Guard, operated by 17920318 CANADA INC.
+Official public website for SpeedGuard, operated by 17920318 CANADA INC.
 
 This is a dependency-free static site for `speedguard.net`. It includes:
 

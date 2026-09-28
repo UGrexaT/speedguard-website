@@ -1,4 +1,4 @@
-# Vehicle Speeding Guard — Design System
+# SpeedGuard — Design System
 
 This document describes the visual and interaction system implemented by
 `styles.css`. The marketing site is a dependency-free static experience and
