@@ -34,6 +34,8 @@ with the product message.
 - `index.html` defines the marketing-page composition and layered hero.
 - `hero-car-cutout.png` is the approved transparent graphite-coupe hero render.
 - `script.js` enhances the mobile menu and current year.
+- `fine-calculator.js` powers the Ontario fine calculator on
+  `ontario-speeding-fines.html`.
 - `privacy.html`, `privacy-ios.html`, `terms.html`, and `support.html` retain
   their existing content while sharing the redesigned header and footer.
 - `app-icon.png` and `favicon.svg` remain approved product assets.
@@ -137,6 +139,28 @@ The hero title uses a two-level lockup: “Vehicle” is smaller and
 - Legal tables of contents are sticky on desktop and static on smaller screens.
 - Long sections use rules and open space instead of card stacks.
 - Contact boxes share the green illuminated surface treatment.
+
+### Driving guides
+
+- Search-targeted guide pages (Ontario fines, limits, points, newcomers) use
+  the legal page frame (`legal-layout` + `guide-layout`, `legal-content` +
+  `guide-content`). Their table of contents hides once the layout stacks.
+- The page header carries a green "Short answer" box (`answer-box`) that
+  answers the search question in two or three sentences.
+- Data tables sit in a scrolling `table-scroll` wrapper so wide tables never
+  cause page-level horizontal scroll.
+- The fine calculator (`calc`, `fine-calculator.js`) uses red only for the
+  stunt-driving state and amber for points and new-driver notes.
+- Every guide has one app box (`guide-cta`) with the store buttons, tagged
+  `utm_source=web&utm_campaign=seo` (Play via its `referrer` parameter), and
+  the amber "Speed-limit data may be missing" note.
+- FAQs use `details` elements and match the page's FAQPage structured data
+  word for word.
+- Every fine names its scale: "on the ticket" (Schedule 43 set fine plus
+  surcharge and costs) or "if convicted" (HTA s.128(14)). Facts come only
+  from the social project's `producer/FACTS.md` and its cited sources.
+- Guide links appear in a `footer-guides` row on the home page and on every
+  guide page.
 
 ## 6. Motion
 

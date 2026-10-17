@@ -9,6 +9,7 @@ This is a dependency-free static site for `speedguard.net`. It includes:
 - Separate iOS Privacy Policy
 - Terms of Use draft
 - Support / Contact page
+- Ontario driving guides for search: speeding fines and calculator, "Can you go 20 over?", Highway 401 limits, demerit points, and a newcomer guide
 - GitHub Pages support files (`CNAME`, `404.html`, `robots.txt`, `sitemap.xml`)
 
 ## Local Preview
