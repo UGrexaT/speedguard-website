@@ -13,6 +13,31 @@
   p{color:#B7C9D6;margin:0 0 24px}
   a{display:block;margin:12px 0;padding:14px 20px;border-radius:999px;border:2px solid #32F5A0;color:#F5FAFF;text-decoration:none;font-weight:700}
 </style>
+<script>
+  // Cloudflare Web Analytics (no cookies) counts visits to this page. On phones the store redirect
+  // waits until its beacon has been delivered, 800 ms at most, so a slow or blocked beacon never holds anyone up.
+  var storeUrl = "", canLeave = false;
+  function leave() {
+    canLeave = true;
+    if (storeUrl) { var url = storeUrl; storeUrl = ""; location.replace(url); }
+  }
+  function isBeacon(url) { return String(url).indexOf("/cdn-cgi/rum") !== -1; }
+  try {
+    // The page view goes out by XMLHttpRequest; later updates may use sendBeacon.
+    var open = XMLHttpRequest.prototype.open;
+    XMLHttpRequest.prototype.open = function (method, url) {
+      if (isBeacon(url)) this.addEventListener("loadend", function () { setTimeout(leave, 0); });
+      return open.apply(this, arguments);
+    };
+    var sendBeacon = navigator.sendBeacon.bind(navigator);
+    navigator.sendBeacon = function (url, data) {
+      var queued = sendBeacon(url, data);
+      if (isBeacon(url)) setTimeout(leave, 0);
+      return queued;
+    };
+  } catch (e) {}
+</script>
+<!-- Cloudflare Web Analytics --><script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "48ad3c85be33446488dc4461e764b59f"}' onerror="leave()"></script><!-- End Cloudflare Web Analytics -->
 </head>
 <body>
 <main>
@@ -33,8 +58,10 @@
   document.getElementById("ios").href = ios;
   document.getElementById("android").href = play;
   var ua = navigator.userAgent || "";
-  if (/iPhone|iPad|iPod/i.test(ua)) location.replace(ios);
-  else if (/Android/i.test(ua)) location.replace(play);
+  if (/iPhone|iPad|iPod/i.test(ua)) storeUrl = ios;
+  else if (/Android/i.test(ua)) storeUrl = play;
+  if (canLeave) leave();
+  else if (storeUrl) setTimeout(leave, 800);
 </script>
 </body>
 </html>
